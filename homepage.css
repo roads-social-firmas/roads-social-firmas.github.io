@@ -1,5 +1,5 @@
 body {
-    background:lightgray;
+  background: lightgray;
   font: 16px Arial;
   /* CSS variables  */
   --rt-orange: #ee7222;
@@ -14,9 +14,8 @@ body {
   padding: 1em;
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
-  xgrid-template-rows: fit-content;
+  grid-template-rows: fit-content;
   gap: 1em;
-  grid-auto-flow: row;
   grid-template-areas:
     "RSFLogo RSFLogo RSFTopics"
     "RSFNews RSFNews RSFNews"
@@ -25,7 +24,7 @@ body {
 
 /* color <h2 part="subtitle"> in files loaded with <load-file> */
 *::part(subtitle) {
-    font-size:120%;
+  font-size: 120%;
   background-color: var(--rt-orange);
   color: var(--rt-darkblue);
   padding: 0.2em;
