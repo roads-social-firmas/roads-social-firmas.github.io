@@ -3,13 +3,6 @@
 <head>
     <link rel="stylesheet" href="..\homepage.css">
     <script src="https://load-file.github.io/element.js"></script>
-    <style>
-        .pagecontainer>div::before {
-            content: attr(class);
-            background: beige;
-            position: absolute;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,10 +18,11 @@
         </div>
         <div class="RSFTeams">
             <load-file src="rt-teams.html"></load-file>
-
         </div>
         <div class="RSFTopics"></div>
-        <div class="RSFNews"></div>
+        <div class="RSFNews">
+            <load-file src="rt-nieuws.html"></load-file>
+        </div>
     </div>
 </body>
 

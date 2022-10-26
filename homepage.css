@@ -1,15 +1,17 @@
 body {
-  max-width: 1024px;
+  max-width: 1280px;
   margin: 1em auto;
-  font:21px Arial;
+  font: 16px Arial;
+  --rt-orange: #ee7222;
+  --rt-lightblue: #0095db;
 }
 .pagecontainer {
   background: beige;
-  padding:1em;
+  padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
-  gap: 0px 0px;
+  grid-template-rows: 1fr 5fr 5fr;
+  gap: 1em;
   grid-auto-flow: row;
   grid-template-areas:
     "RSFLogo RSFLogo RSFTopics"
@@ -17,6 +19,16 @@ body {
     "RSFTeams RSFYouKnow RSFLinks";
 }
 
+/* color <h2 part="subtitle"> in files loaded with <load-file> */
+*::part(subtitle){
+    background-color:var(--rt-orange);
+    padding:.2em;
+}
+*::part(newsbackground){
+    background-color:var(--rt-lightblue);
+}
+
+/* position grid-ares on Homepage */
 .RSFLogo {
   grid-area: RSFLogo;
 }
