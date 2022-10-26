@@ -1,6 +1,5 @@
 body {
-  max-width: 1280px;
-  margin: 1em auto;
+    background:lightgray;
   font: 16px Arial;
   /* CSS variables  */
   --rt-orange: #ee7222;
@@ -9,11 +8,13 @@ body {
   --li_margin: 0.25em;
 }
 .pagecontainer {
+  max-width: 1280px;
+  margin: 0 auto;
   background: beige;
   padding: 1em;
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
-  grid-template-rows: 1fr 5fr 5fr;
+  xgrid-template-rows: fit-content;
   gap: 1em;
   grid-auto-flow: row;
   grid-template-areas:
@@ -24,9 +25,11 @@ body {
 
 /* color <h2 part="subtitle"> in files loaded with <load-file> */
 *::part(subtitle) {
+    font-size:120%;
   background-color: var(--rt-orange);
   color: var(--rt-darkblue);
   padding: 0.2em;
+  margin-block-start: 0;
 }
 *::part(newsbackground) {
   background-color: var(--rt-lightblue);
