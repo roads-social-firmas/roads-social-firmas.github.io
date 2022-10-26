@@ -1,0 +1,42 @@
+body {
+  max-width: 1024px;
+  margin: 1em auto;
+  font:21px Arial;
+}
+.pagecontainer {
+  background: beige;
+  padding:1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "RSFLogo RSFLogo RSFTopics"
+    "RSFNews RSFNews RSFNews"
+    "RSFTeams RSFYouKnow RSFLinks";
+}
+
+.RSFLogo {
+  grid-area: RSFLogo;
+}
+
+.RSFLinks {
+  grid-area: RSFLinks;
+}
+
+.RSFYouKnow {
+  grid-area: RSFYouKnow;
+}
+
+.RSFTeams {
+  grid-area: RSFTeams;
+}
+
+.RSFTopics {
+  grid-area: RSFTopics;
+}
+
+.RSFNews {
+  grid-area: RSFNews;
+}
