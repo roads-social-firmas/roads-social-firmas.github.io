@@ -2,15 +2,17 @@ body {
   max-width: 1280px;
   margin: 1em auto;
   font: 16px Arial;
+  /* CSS variables  */
   --rt-orange: #ee7222;
   --rt-lightblue: #0095db;
   --rt-darkblue: #023770;
+  --li_margin: 0.25em;
 }
 .pagecontainer {
   background: beige;
   padding: 1em;
   display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-columns: 2fr 4fr 2fr;
   grid-template-rows: 1fr 5fr 5fr;
   gap: 1em;
   grid-auto-flow: row;
