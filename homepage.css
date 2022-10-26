@@ -9,7 +9,7 @@ body {
   background: beige;
   padding: 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 1fr 5fr 5fr;
   gap: 1em;
   grid-auto-flow: row;
