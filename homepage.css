@@ -29,6 +29,7 @@ body {
   color: var(--rt-darkblue);
   padding: 0.2em;
   margin-block-start: 0;
+  padding-bottom: 0.05em;
 }
 *::part(newsbackground) {
   background-color: var(--rt-lightblue);
