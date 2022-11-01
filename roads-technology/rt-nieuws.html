@@ -2,7 +2,7 @@
 <style>
     .newsitem {
         display: grid;
-        grid-template-columns: 6fr 200px 13fr;
+        grid-template-columns: 6fr 240px 13fr;
         gap: 1em;
         background: beige;
     }
@@ -15,28 +15,9 @@
         text-shadow: 1px 1px 1px black;
     }
 
-    ul {
-        padding-left: 1.5em;
-    }
-
-    li {
-        margin-bottom: 0.5em;
-    }
 </style>
 <div class="newsitem" part="newsitem">
-    <div><b>De kantine is vergaderruimte:</b>
-        <ul>
-            <li>Woensdag 2/11 13:00 - 14:00<br>
-                RT Werkbegeleider Overleg</li>
-            <li>Woensdag 2/11 14:00 - 15:30<br>Appeltaart Imperium</li>
-            <li>Donderdag 3/11 12:00 - 14:00<br>
-                Online Clienten Omgeving
-            </li>
-            <li>Donderdag 3/11 15:00 - 15:30<br>
-                Roads Tour - Haarlemmermeer</li>
-        </ul>
-
-    </div>
+    <load-file src="rt-kantine.html"></load-file>
     <div class="image"><img width="100%" src="/images/werkbegeleider-lina-miedema.jpg"></div>
     <div class="message" part="newsbackground">
         <p>Dinsdag 1 november start <b>Lina Miedema</b> als <i>administratief werkbegeleider</i> bij Roads
