@@ -18,7 +18,7 @@ home-page {
   gap: 1em;
   grid-template-areas:
     "RSFLogo RSFLogo RSFTopics"
-    "RSFNews RSFNews RSFNews"
+    "RSFKantine RSFNews RSFNews"
     "RSFTeams RSFYouKnow RSFLinks";
 }
 
@@ -38,6 +38,9 @@ home-page {
 /* position grid-ares on Homepage */
 .RSFLogo {
   grid-area: RSFLogo;
+}
+.RSFKantine {
+  grid-area: RSFKantine;
 }
 
 .RSFLinks {
