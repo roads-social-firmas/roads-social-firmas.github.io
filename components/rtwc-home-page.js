@@ -1,6 +1,8 @@
 customElements.define("home-page", class extends HTMLElement {
     connectedCallback() {
         setTimeout(() => {
+
+            // add a CTRL+click event to load-file elements, opening the Source Code in a new tab
             this.querySelectorAll("load-file").forEach((lf) => {
                 lf.addEventListener("click", (e) => {
                     if (e.ctrlKey) {
@@ -14,6 +16,10 @@ customElements.define("home-page", class extends HTMLElement {
                     }
                 });
             });
+
+            // simulate website traffic
+            fetch("https://roadsmap.nl");
+
         }, 100);
     }
 })
